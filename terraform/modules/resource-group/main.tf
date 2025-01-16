@@ -11,7 +11,7 @@ resource "azurerm_resource_group" "core" {
 	tags     = {
 		appname = var.appname
 		designer = var.designer
-    	department = var.department
+    		department = var.department
 		environment = var.environment
 		deployedOn = formatdate("EEEE, DD 'of' MMMM, YYYY", timestamp())
 	}
